@@ -1,1 +1,1 @@
-# PowerBI_Global-Superstore-Sales
+# Power BI for Global Retail: Analyzing Superstore Sales Performance
