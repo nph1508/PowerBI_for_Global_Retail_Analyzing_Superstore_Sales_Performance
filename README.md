@@ -69,50 +69,15 @@ Develop a **Global Sales Dashboard** that enables senior management to:
 ## 📂 Dataset Description & Data Structure  
 
 ### 📌 Data Source  
-- Source: (Mention where the dataset is obtained from—Kaggle, company database, government sources, etc.)  
-- Size: (Mention the number of rows & columns)  
-- Format: (.csv, .sql, .xlsx, etc.)  
+- Source: 
+- Size: 
+- Format: 
 
 ### 📊 Data Structure & Relationships  
 
-#### 1️⃣ Tables Used:  
-Mention how many tables are in the dataset.  
-
-#### 2️⃣ Table Schema & Data Snapshot  
-
-Table 1: Products Table  
-
-👉🏻 Insert a screenshot of table schema 
-
- _Example:_
-
-| Column Name | Data Type | Description |  
-|-------------|----------|-------------|  
-| Product_ID  | INT      | Unique identifier for each product |  
-| Name        | TEXT     | Product name |  
-| Category    | TEXT     | Product category |  
-| Price       | FLOAT    | Price per unit |  
-
-
-
-Table 2: Sales Transactions  
-
-👉🏻 Insert a screenshot of table schema 
-
-
- _Example:_
-
-| Column Name    | Data Type | Description |  
-|---------------|----------|-------------|  
-| Transaction_ID | INT      | Unique identifier for each sale |  
-| Product_ID     | INT      | Foreign key linking to Products table |  
-| Quantity       | INT      | Number of items sold |  
-| Sale_Date      | DATE     | Date of transaction |  
-
-
 📌If the table is too big, only capture a part of it that contains key metrics you used in the projects or put the table in toggle
 
-#### 3️⃣ Data Relationships:  
+####  Data Relationships:  
 *Visualized connections between tables for the Profit Optimization Dashboard*
 
  🔗 **Relationship Types**
