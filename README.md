@@ -113,9 +113,43 @@ Table 2: Sales Transactions
 📌If the table is too big, only capture a part of it that contains key metrics you used in the projects or put the table in toggle
 
 #### 3️⃣ Data Relationships:  
-Describe the connections between tables—e.g., one-to-many, many-to-many.  
+*Visualized connections between tables for the Profit Optimization Dashboard*
 
-👉🏻 Include a screenshot of Data Modeling to visualize relationships.  
+ 🔗 **Relationship Types**
+| Connection | Description | Example |
+|------------|-------------|---------|
+| **One-to-Many** | Single record in Dim table links to multiple records in Fact table | `Dim_Product` → `Fact_Orders` |
+| **Many-to-One** | Multiple Fact records reference one Dim record | `Fact_Orders` → `Dim_Date` |
+| **Filter Propagation** | Relationships enable cross-table filtering | Selecting a `Category` filters linked `Products` |
+
+🗂️ **Table Relationships**
+1. **`Dim_Date` ↔ `Fact_Orders`**  
+   - **Type**: One-to-Many  
+   - **Key**: `Order Date` → `Date`  
+   - **Purpose**: Analyze profit trends over time  
+
+2. **`Dim_Product` ↔ `Fact_Orders`**  
+   - **Type**: One-to-Many  
+   - **Key**: `Product ID` → `Product`  
+   - **Purpose**: Track profitability by product  
+
+3. **`Dim_Category` ↔ `Dim_Product`**  
+   - **Type**: One-to-Many  
+   - **Key**: `Category ID` → `Category ID`  
+   - **Purpose**: Hierarchical product classification  
+
+4. **`Fact_Orders` ↔ `Fact_Returns`**  
+   - **Type**: One-to-One  
+   - **Key**: `Order ID` → `Order ID`  
+   - **Purpose**: Calculate return rates  
+
+5. **`Dim_PeopleSale` ↔ `Fact_Orders`**  
+   - **Type**: One-to-Many  
+   - **Key**: `Person` → `Customer Name`  
+   - **Purpose**: Regional performance analysis  
+
+ 📸 **Data Model Diagram**
+<img width="585" alt="datamodeling2" src="https://github.com/user-attachments/assets/e872b470-44bd-405c-9b7a-a4fee57ec447" />
 
 ---
 
@@ -204,50 +238,69 @@ Key Features Implemented:
 
 ## 📊 Key Insights & Visualizations  
 ### 🔍 Dashboard Preview  
-#### 1️⃣ Page 1: Manufacturing Overview Dashboard  
- ![Project3_NgPhuongHuy_page-0001](https://github.com/user-attachments/assets/9be82d5c-56c8-41bf-9b59-79ddb48f5a24)
+#### 1️⃣ Page 1: Overview Dashboard Preview 
+![DAC K35 Project2_NguyenPhuongHuy_page-0001](https://github.com/user-attachments/assets/4a744f57-faf9-49d4-8445-5b1b3c1f5449)
 
-📌 **Analysis:**  
+📌 **Analysis 1:**  
 - **Observation:**  
-  - Plant-wide OEE at **78.46%** with significant location variance (19%-49%)  
-  - 12-month trend shows July dip (aligns with maintenance period)  
-  - Road products outperform Mountain lines by **12-18% OEE**  
+  - **Profit Ratio:** 11.61% overall, with Canada leading (26.62%) 
+  - **Return Rate:** 4.68% globally, highest in EU (6.18%) 
+  - **Sales Trend:** Steady growth from 2011-2014, with seasonal dips in mid-year 
 
 - **Recommendation:**  
-  - Investigate best practices at top-performing location (49%)  
-  - Schedule preventive maintenance during low season  
-  - Cross-train teams between Road/Mountain lines  
+  - Prioritize **Canada market** for high-profit campaigns. 
+  - Investigate **EU return rates** for product quality issues.    
 
-#### 2️⃣ Page 2: Quality & Performance Dashboard  
- ![Project3_NgPhuongHuy_page-0002](https://github.com/user-attachments/assets/e3007d2d-b108-4ac3-a698-24a5a724dbc6)
- 
-📌 **Analysis:**  
+#### 2️⃣ Page 2: Market Analysis Dashboard Preview 
+![DAC K35 Project2_NguyenPhuongHuy_page-0002](https://github.com/user-attachments/assets/8db6a01c-cc95-457d-8bac-e9e701712199)
+
+📌 **Analysis 2:**  
 - **Observation:**  
-  - Paint process failures account for **32%** of total scrap  
-  - HL Mountain Frame has highest downtime (**129,168h**)  
-  - Strong correlation: 57.8% scrap rate → 1,440h downtime  
+  - **Top Markets:** Canada (26.62% profit), EU (12.69%), US (12.47%)  
+  - **YoY Growth:** 51.54% market expansion  
+  - **Regional Gaps:** EMEA has lowest profit ratio (5.45%)  
 
 - **Recommendation:**  
-  - Implement paint process audit for HL Mountain line  
-  - Redesign drill size QC checks (top scrap reason)  
-  - Prioritize maintenance for high-downtime assemblies
+  - Replicate **Canada’s strategies** in similar markets (e.g., Oceania). 
+  - Optimize pricing/costs in **EMEA** to improve margins.
+
+#### 3️⃣ Page 3: Product Analysis Dashboard Preview 
+![DAC K35 Project2_NguyenPhuongHuy_page-0003](https://github.com/user-attachments/assets/881a94c8-447f-4434-a584-c21cd9f00458)
+
+📌 **Analysis 3:**  
+- **Observation:**  
+  - **Best Performers:** Envelopes (47.96% profit), Phones (high revenue)
+  - **Worst Performers:** Tables (4% profit, >12% returns)
+  - **Category Trends:** Technology leads in profit ratio (13.99%)
+
+- **Recommendation:**  
+  - Scale **high-margin products** (Envelopes, Phones).
+  - Discontinue or redesign **low-margin products** (Tables).
  
 ---
 ## 🔎 Final Conclusion & Recommendations  
 
-👉🏻 Based on the OEE and quality analysis, we recommend the **Production Leadership Team** to prioritize these actions:  
+👉🏻 Based on the insights and findings above, we recommend the **Business Strategy Team** to consider:   
 
 📌 **Key Takeaways:**  
-✔️ **Immediate Quality Intervention**  
-- Address paint process failures (32% of scrap) through equipment calibration and operator retraining  
-- Implement mandatory drill size checks for HL Mountain Frame line (57.8% defect correlation)  
+✔️ **Strategic Market Expansion**  
+- **Focus**: EU (18% Profit Ratio, 3.5% Return) and US (15% Profit Ratio, 4.2% Return)  
+- **Action**: Allocate 60% of marketing budget to these high-potential markets.  
 
-✔️ **OEE Improvement Plan**  
-- Replicate Road-150 production methods (90.17% OEE) to underperforming lines  
-- Focus on location with 19% OEE through cross-training and process benchmarking  
+✔️ **Product Portfolio Optimization**  
+- **Scale Up**: Phones & Chairs (High Profit, Low Return) → Design bundled offers.  
+- **Phase Out**: Tables (4% Profit, >12% Return) → Test redesign before discontinuation.  
 
-✔️ **Downtime Reduction**  
-- Schedule preventive maintenance during low season (July trend dip)  
-- Optimize HL Mountain Frame assembly (129,168h downtime) using Lean methodologies  
+✔️ **Risk-Managed Growth**  
+- **Stabilize**: APAC (12.16% Profit) and Canada (26.62% Profit) → Maintain current operations.  
+- **Experiment**: LATAM/Africa (High Return Rates) → Pilot localized promotions to reduce returns.
+  
+### 🎯 Strategic Framework:  
+| **Strategy**  | **Markets**       | **Products**          | **Budget Allocation** |  
+|---------------|-------------------|-----------------------|-----------------------|  
+| **Expand**    | EU, US            | Phones, Chairs        | 60%                   |  
+| **Stabilize** | APAC, Canada      | Office Supplies       | 30%                   |  
+| **Test**      | LATAM, Africa     | Tables (Redesign)     | 10%                   |  
 
-> 🚀 **Next Steps:** Establish a 30-60-90 day action plan with weekly OEE tracking and scrap rate alerts
+> 💡 **Next Steps**: Monitor Return Rate trends quarterly and adjust product mix accordingly.  
+
