@@ -131,44 +131,58 @@ Describe the connections between tables—e.g., one-to-many, many-to-many.
 **Empathy Map:**  
 | Aspect | Insights |  
 |--------|----------|  
-| **Thinking** | "Profit quality matters more than revenue volume"|  
-| **Pains** | No unified view of profitability across dimensions (product/region/time)|  
+| **Thinking** | "Profit quality matters more than revenue volume" |  
+| **Pains** | No unified view of profitability across dimensions (product/region/time) |  
+| **Gains** | Optimize resource allocation and investment decisions |
+
+**Dataset:**
+   - **Fact Tables:** fact_orders, fact_return
+   - **Dimension Tables:** dim_product, dim_date, dim_category, dim_subcategory, dim_peoplesale
 
 ### 2️⃣ Define - Frame the Problem 
 **Northstar Metric:**  
-📊 **OEE (Overall Equipment Effectiveness)** - Measures production efficiency through:
-- **Availability** (Uptime vs Planned Production Time)  
-- **Performance** (Actual vs Maximum Speed)  
-- **Quality** (Defect-Free Products)
+📊 **Profit Ratio** = Net Profit / Total Revenue
+   - Why?: Reflects financial efficiency of business decisions. 
 
-**Growth Formula:**  OEE = Availability (%) × Performance (%) × Quality (%)
+**Growth Formula Breakdown:**
+Profit Ratio = (SUM(Profit) / SUM(Revenue))  
+↓  
+Drill-down by: [Product] × [Market] × [Sales Channel]  
 
 
 ### 3️⃣ Ideate - Dashboard Framework
 **Information Architecture:**  
 | Layer | Scope | Visualization Examples  |  
 |-------|-------|------------------------ |  
-| **Layer 0** | Executive Summary	 | OEE Scorecard, Defect Rate, Downtime|  
-| **Layer 1** | Machine/Process Level| Downtime Hours, Scrap Rate by Station |  
+| **Layer 0** | Executive Summary | Profit Ratio KPI, Revenue vs Profit Waterfall |  
+| **Layer 1** | Single-Dimension Analysi | Top/Nth Products by Profit (Bar Chart), Profit Heatmap |
+| **Layer 0** | Multi-Dimension Analysis | Market Detail |
 
 **Dashboard Structure:**
-1. **Overview Page:** Key OEE metrics (78.46%) with KPI alerts
-2. **Analytics Page:** Granular performance breakdown by product line/machine
-
+1. **Overview Page:**
+   - Key Metrics: Profit Ratio (18.5%), YoY Growth
+   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
+2. **Product/Market Page:**
+   - Key Metrics: Profit Ratio (18.5%), YoY Growth
+   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
+3. **Detail Page:**
+   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
+   
 ### 4️⃣ Prototype (Design Iterations)
 Key Features Implemented:
-- ✅ Dynamic OEE Breakdown Wheel
-- ✅ Machine Status Traffic Light System
-- ✅ Interactive Downtime Pareto Chart
-- ✅ Shift Comparison Matrix  
+- ✅ Dynamic Profit Matrix: Interactive cross-filtering (Product × Market)
+- ✅ Drill-Through: From overview to granular data
+- ✅ Alert System: Highlight products with profit margin < 10%
 
-### 5️⃣ Validate (User Testing)
-**Feedback Implementation:**  
-- Improved color contrast for color-blind users 
-- Added export functionality for reports
-- Simplified navigation between hierarchy levels
+### 5️⃣ Review & Iterate
+**Improvements Across Versions:**  
+| Version | Key Changes |
+|-------- |------------ |
+| V1      |	Added industry benchmarks to KPI cards |
+| V2      |	Simplified tooltip formatting (currency units) |
+| V3      |	Enabled PDF export per page |
   
-> Iterative Improvement: Conducted 3 sprint cycles with stakeholder reviews to refine the final solution
+> Iteration Insight: *"After testing, users requested a new comparison feature: Online vs. Offline sales profitability. Revisited Empathize stage to refine requirements."*
 
 ---
 
