@@ -1,4 +1,4 @@
-# Power BI for Global Retail: Analyzing Superstore Sales Performance
+# Analyzing Superstore Sales Performance in Global Retail | Power BI
 Author: Nguyễn Phương Huy
 
 Date: 2000-15-08
