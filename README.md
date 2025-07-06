@@ -1,9 +1,12 @@
 # Analyzing Superstore Sales Performance in Global Retail | Power BI
-Author: Nguyễn Phương Huy
 
-Date: 2000-15-08
+<img src="https://github.com/user-attachments/assets/e1583dd2-3b38-453a-b6ab-efd4136d4a42" width="100%" />
 
-Tools Used: PowerBI
+**Author:** Nguyễn Phương Huy
+
+**Date:** April 2025
+
+**Tools Used:**  PowerBI
 
 ---
 ## 📑 Table of Contents  
