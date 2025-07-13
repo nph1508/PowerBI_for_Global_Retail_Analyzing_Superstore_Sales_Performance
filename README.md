@@ -10,113 +10,113 @@
 
 ---
 ## 📑 Table of Contents  
-1. [📌 Background & Overview](#-background--overview)  
-2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)  
-3. [🧠 Design Thinking Process](#-design-thinking-process)  
-4. [📊 Key Insights & Visualizations](#-key-insights--visualizations)  
-5. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
+[1. 📌 Background & Overview](#1--background--overview)  
+[2. 📂 Dataset Description & Data Structure](#2--dataset-description--data-structure)   
+[3. 🧠 Design Thinking Process](#3--design-thinking-process)  
+[4. 📊 Key Insights & Visualizations](#4--key-insights--visualizations)  
+[5. 🔎 Final Conclusion & Recommendations](#5--final-conclusion--recommendations)
 
 ---
-## 📌 Background & Overview  
+## 1. 📌 Background & Overview 
 
-### 🎯 Objective  
-Develop a **Global Sales Dashboard** that enables senior management to:  
-- Analyze worldwide sales performance and market trends  
-- Identify high-potential products and regions for expansion  
-- Monitor return rates and sales team effectiveness  
+**Objective:**
 
-### 🏭 Business Context  
-**Data Structure:**  
-1. **Orders:** 50,000+ transactions with order details (sales, profit, shipping, etc.)  
-2. **People:** Sales personnel assignments by region  
-3. **Returns:** 10.7% return rate across all transactions  
+**📖 What is this project about?**
 
-**Key Challenges:**  
-- Regional performance disparities (APAC vs. EU vs. Americas)  
-- High return rates in specific product categories  
-- Inconsistent sales performance across teams  
+This project aims to build a **Power BI dashboard** using the *Global Superstore Sales* dataset, which includes data on transactions (**Orders**), sales representatives (**People**), and product returns (**Returns**).
+The goal is to provide senior managers with **data-driven insights** to:
+ - **Understand current business performance**
+ - **Optimize market expansion strategies**
+ - **Identify strategic products for growth**
+ - **Support better decision-making to drive revenue and ROI**
 
-### 👤 Who is this project for?  
-✔️ Senior leadership team  
-✔️ Regional sales managers  
-✔️ Product strategy executives  
-✔️ Marketing campaign planners  
+**👤 Who is this project for?**
+ - ✔️ Data analysts & business analysts seeking actionable insights. 
+ - ✔️ Marketing and sales teams focusing on product performance and market growth. 
+ - ✔️ Route to market team aiming to improve distribution strategies and market reach. 
 
-### ❓ Business Questions:  
-1. **Market Expansion**  
-   - Which regions show strongest growth potential?  
-   - What product categories dominate each market?  
+**❓Business Questions:**
+ - ✔️ What is the current performance of Superstore?
+ - ✔️ Which markets should Superstore expand into to increase revenue and ROI?
+ - ✔️ Which products should be prioritized for strategic growth?
 
-2. **Product Strategy**  
-   - Which products have highest profit margins?  
-   - How do return rates vary by product category?  
-
-3. **Sales Performance**  
-   - Which sales teams outperform others?  
-   - What's the correlation between shipping time and return rates?  
-
-### 📊 Project Outcome:  
+**📊 Project Outcome:**
 | Metric               | Current State | Target Improvement |  
 |----------------------|---------------|--------------------|  
 | Global Return Rate   | 10.7%         | Reduce to 8.5%     |  
 | Regional Growth      | APAC +12%     | EU +15%            |  
-| Avg. Profit Margin   | 14.3%         | Increase to 16%    |  
-
-**💡 Innovation Opportunity:** Implement predictive analytics to:  
-- Forecast regional demand spikes  
-- Identify at-risk orders likely to be returned  
-- Optimize product mix by market  
+| Avg. Profit Margin   | 14.3%         | Increase to 16%    |   
 
 ---
 
 ## 📂 Dataset Description & Data Structure  
 
-### 📌 Data Source  
-- Source: 
-- Size: 
-- Format: 
+### **📌 Data Source** 
+- **Source**: Kaggle  
+- **Size**: The **Orders** table contains **51,290** records.  
+- **Format**: CSV 
 
-### 📊 Data Structure & Relationships  
+### 📊 **Data Structure & Relationships**  
 
-📌If the table is too big, only capture a part of it that contains key metrics you used in the projects or put the table in toggle
+#### 1️⃣ **Tables Used:**  
+The dataset consists of **three tables**:  
 
-####  Data Relationships:  
-*Visualized connections between tables for the Profit Optimization Dashboard*
+- 🛒 **Orders** – Contains detailed transaction and customer information (**51,290 records**).
 
- 🔗 **Relationship Types**
-| Connection | Description | Example |
-|------------|-------------|---------|
-| **One-to-Many** | Single record in Dim table links to multiple records in Fact table | `Dim_Product` → `Fact_Orders` |
-| **Many-to-One** | Multiple Fact records reference one Dim record | `Fact_Orders` → `Dim_Date` |
-| **Filter Propagation** | Relationships enable cross-table filtering | Selecting a `Category` filters linked `Products` |
+<details>
+<summary> <strong>Table 1: Orders</strong></summary>
 
-🗂️ **Table Relationships**
-1. **`Dim_Date` ↔ `Fact_Orders`**  
-   - **Type**: One-to-Many  
-   - **Key**: `Order Date` → `Date`  
-   - **Purpose**: Analyze profit trends over time  
+| Column Name       | Data Type   | Description                              |
+|------------------|------------|------------------------------------------|
+| `Order ID`      | `VARCHAR`   | Unique identifier for each order.       |
+| `Order Date`    | `DATE`      | Date when the order was placed.         |
+| `Ship Date`     | `DATE`      | Date when the order was shipped.        |
+| `Ship Mode`     | `VARCHAR`   | Shipping method used for delivery.      |
+| `Customer ID`   | `VARCHAR`   | Unique identifier for each customer.    |
+| `Customer Name` | `VARCHAR`   | Full name of the customer.              |
+| `Segment`       | `VARCHAR`   | Customer segment (e.g., Consumer, Corporate). |
+| `City`         | `VARCHAR`   | City where the order was placed.        |
+| `State`        | `VARCHAR`   | State where the order was placed.       |
+| `Country`      | `VARCHAR`   | Country where the order was placed.     |
+| `Postal Code`  | `VARCHAR`   | Postal code of the shipping address.    |
+| `Market`       | `VARCHAR`   | Market region (e.g., APAC, EMEA).       |
+| `Region`       | `VARCHAR`   | Geographical region of the order.       |
+| `Product ID`   | `VARCHAR`   | Unique identifier for each product.     |
+| `Category`     | `VARCHAR`   | Product category (e.g., Furniture, Office Supplies). |
+| `Sub-Category` | `VARCHAR`   | Sub-category of the product.            |
+| `Product Name` | `VARCHAR`   | Name of the product ordered.            |
+| `Sales`        | `DECIMAL`   | Revenue generated from the order.       |
+| `Quantity`     | `INT`       | Number of items ordered.                |
+| `Profit`       | `DECIMAL`   | Profit earned from the order.           |
 
-2. **`Dim_Product` ↔ `Fact_Orders`**  
-   - **Type**: One-to-Many  
-   - **Key**: `Product ID` → `Product`  
-   - **Purpose**: Track profitability by product  
+</details>
 
-3. **`Dim_Category` ↔ `Dim_Product`**  
-   - **Type**: One-to-Many  
-   - **Key**: `Category ID` → `Category ID`  
-   - **Purpose**: Hierarchical product classification  
+- 🔄 **Returns** – Stores data on returned orders.
 
-4. **`Fact_Orders` ↔ `Fact_Returns`**  
-   - **Type**: One-to-One  
-   - **Key**: `Order ID` → `Order ID`  
-   - **Purpose**: Calculate return rates  
+<details>
+<summary> <strong>Table 2: Returns</strong></summary>
 
-5. **`Dim_PeopleSale` ↔ `Fact_Orders`**  
-   - **Type**: One-to-Many  
-   - **Key**: `Person` → `Customer Name`  
-   - **Purpose**: Regional performance analysis  
+| Column Name  | Data Type | Description |
+|--------------|-----------|-------------|
+| `Returned`   | `VARCHAR` | Indicates whether the order was returned (e.g., 'Yes' or 'No'). |
+| `Order ID`   | `VARCHAR` | Unique identifier for each order. |
+
+</details>
+  
+- 👥 **People** – Holds information about sales representatives.
+
+<details>
+<summary> <strong>Table 3: People</strong></summary>
+
+| Column Name | Data Type | Description |
+|-------------|-----------|-------------|
+| `Person`    | `VARCHAR` | Name of the salesperson. |
+| `Region`    | `VARCHAR` | Geographic region where the salesperson operates. |
+
+</details>
 
  📸 **Data Model Diagram**
+ 
 <img width="585" alt="datamodeling2" src="https://github.com/user-attachments/assets/e872b470-44bd-405c-9b7a-a4fee57ec447" />
 
 ---
