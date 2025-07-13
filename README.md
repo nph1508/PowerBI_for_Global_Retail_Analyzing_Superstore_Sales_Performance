@@ -49,7 +49,7 @@ The goal is to provide senior managers with **data-driven insights** to:
 
 ---
 
-## 📂 Dataset Description & Data Structure  
+## 2. 📂 Dataset Description & Data Structure 
 
 ### **📌 Data Source** 
 - **Source**: Kaggle  
@@ -121,7 +121,7 @@ The dataset consists of **three tables**:
 
 ---
 
-## 🧠 Design Thinking Process  
+## 3. 🧠 Design Thinking Process 
 
 *A human-centered approach for actionable insights*  
 
@@ -204,7 +204,7 @@ Key Features Implemented:
 
 ---
 
-## 📊 Key Insights & Visualizations  
+## 4. 📊 Key Insights & Visualizations 
 ### 🔍 Dashboard Preview  
 #### 1️⃣ Page 1: Overview Dashboard Preview 
 ![DAC K35 Project2_NguyenPhuongHuy_page-0001](https://github.com/user-attachments/assets/4a744f57-faf9-49d4-8445-5b1b3c1f5449)
@@ -246,7 +246,7 @@ Key Features Implemented:
   - Discontinue or redesign **low-margin products** (Tables).
  
 ---
-## 🔎 Final Conclusion & Recommendations  
+## 5. 🔎 Final Conclusion & Recommendations
 
 👉🏻 Based on the insights and findings above, we recommend the **Business Strategy Team** to consider:   
 
