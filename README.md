@@ -207,7 +207,8 @@ Key Features Implemented:
 ## 4. 📊 Key Insights & Visualizations 
 ### 🔍 Dashboard Preview  
 #### 1️⃣ Page 1: Overview Dashboard Preview 
-![DAC K35 Project2_NguyenPhuongHuy_page-0001](https://github.com/user-attachments/assets/4a744f57-faf9-49d4-8445-5b1b3c1f5449)
+![Analyzing Superstore Sales Performance in Global Retail_page-0001](https://github.com/user-attachments/assets/2354a59d-e233-4d31-83c4-9f546cf0b765)
+
 
 📌 **Analysis 1:**  
 - **Observation:**  
@@ -220,7 +221,7 @@ Key Features Implemented:
   - Investigate **EU return rates** for product quality issues.    
 
 #### 2️⃣ Page 2: Market Analysis Dashboard Preview 
-![DAC K35 Project2_NguyenPhuongHuy_page-0002](https://github.com/user-attachments/assets/8db6a01c-cc95-457d-8bac-e9e701712199)
+![Analyzing Superstore Sales Performance in Global Retail_page-0002](https://github.com/user-attachments/assets/1ed79463-606d-4ef2-baeb-f8c061c61dd3)
 
 📌 **Analysis 2:**  
 - **Observation:**  
@@ -233,7 +234,7 @@ Key Features Implemented:
   - Optimize pricing/costs in **EMEA** to improve margins.
 
 #### 3️⃣ Page 3: Product Analysis Dashboard Preview 
-![DAC K35 Project2_NguyenPhuongHuy_page-0003](https://github.com/user-attachments/assets/881a94c8-447f-4434-a584-c21cd9f00458)
+![Analyzing Superstore Sales Performance in Global Retail_page-0003](https://github.com/user-attachments/assets/f17db2b9-69f1-443c-b3e7-fba34c140ad3)
 
 📌 **Analysis 3:**  
 - **Observation:**  
