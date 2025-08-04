@@ -153,7 +153,7 @@ This part is in the dashboard
    - Revenue reached **$9.48M** and profit hit **$1.1M**, both increasing **51.3% YoY**. → **Growth** was primarily driven by **increased order volume**, **not by improved operational efficiency** (profit margin remained at **12%**).
 
 **2. Customer Base Expands Steadily**  
-   - Customer count grew from **1303 (2011)** to **1501 (2014)**, with a stable **~1% return rate**. → Indicates **strong customer retention** and consistent service quality over time.
+   - Customer count grew from **1303 (2011)** to **1589 (2014)**, with a stable **~1% return rate**. → Indicates **strong customer retention** and consistent service quality over time.
 
 **3. Canada Shows Highest Profit Margin**  
    - **Canada** achieved a **28% profit margin** despite low revenue. **US, EU, and APAC** contributed the highest revenue overall. → Suggests **Canada** has high **profitability potential**, while the **US remains the core market** in terms of scale.
