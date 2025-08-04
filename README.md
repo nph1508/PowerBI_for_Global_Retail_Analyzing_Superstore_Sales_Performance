@@ -174,58 +174,54 @@ This part is in the dashboard
    - **Technology products** generated the highest revenue across all regions. → Suggests **customers have a strong preference** for **tech products** over other categories.
 
 **6. Growth Driven by Existing Customers**  
-   - **Buyer count** increased only **1%**, but **orders surged 51.7%**; **Average Order Value (AOV)** slightly decreased by **-0.3%**. → Indicates **strong repeat purchase behavior**, with smaller but more frequent orders.
+   - **Customner count** increased only **1%**, but **orders surged 51.7%**; **Average Order Value (AOV)** slightly decreased by **-0.3%**. → Indicates **strong repeat purchase behavior**, with smaller but more frequent orders.
 
 #### 2️⃣ Page 2: Market Analysis Dashboard Preview 
 ![Analyzing Superstore Sales Performance in Global Retail_page-0002](https://github.com/user-attachments/assets/1ed79463-606d-4ef2-baeb-f8c061c61dd3)
 
-📌 **Analysis 2:**  
-- **Observation:**  
-  - **Top Markets:** Canada (26.62% profit), EU (12.69%), US (12.47%)  
-  - **YoY Growth:** 51.54% market expansion  
-  - **Regional Gaps:** EMEA has lowest profit ratio (5.45%)  
+### 📌 Key Findings:
 
-- **Recommendation:**  
-  - Replicate **Canada’s strategies** in similar markets (e.g., Oceania). 
-  - Optimize pricing/costs in **EMEA** to improve margins.
+**1. Revenue & Profit Distribution**  
+   - Total revenue **$9.48M**, with **APAC ($2.7M)**, **EU ($2.1M)**, and **US ($1.8M)** leading. → **Canada** had the highest **profit margin (28%)**, despite low revenue. **EMEA** and **Africa** underperformed with low revenue and profit margins (~6–12%).
+
+**2. Profit Contribution by Market**  
+   - **APAC, EU, and US** contributed the most to profit. → **LATAM** steady (~15%), while **Africa** and **Canada** contributed minimally.
+
+**3. Revenue Growth by Market & Category**  
+   - **Canada** saw **+219.5% YoY** growth, especially in **Technology (+63.5%)**. → Emerging markets **EMEA (+183.15%)** and **Africa (+168.25%)** grew rapidly.
+
+ **4. The best Sale Agent**  
+   - **Central, South, and EMEA**  is the **top-performing salesperson** with revenue exceeding **$210K**.
+
+**5. Order Volume & Return Rate**  
+   - **Central** led in **order volume** and **lowest return rate (~1%)**. → Other regions had stable return rates (1–3%).
 
 #### 3️⃣ Page 3: Product Analysis Dashboard Preview 
 ![Analyzing Superstore Sales Performance in Global Retail_page-0003](https://github.com/user-attachments/assets/f17db2b9-69f1-443c-b3e7-fba34c140ad3)
 
-📌 **Analysis 3:**  
-- **Observation:**  
-  - **Best Performers:** Envelopes (47.96% profit), Phones (high revenue)
-  - **Worst Performers:** Tables (4% profit, >12% returns)
-  - **Category Trends:** Technology leads in profit ratio (13.99%)
+### 📌 Key Findings:
 
-- **Recommendation:**  
-  - Scale **high-margin products** (Envelopes, Phones).
-  - Discontinue or redesign **low-margin products** (Tables).
- 
+**1. Quadrant Analysis by Sub-Category**
+- **Copiers** and **Phones** are the leaders with high **revenue** and **strong profit margins**. **Accessories**, **Art**, and **Labels** are **profitable but under-scaled**, showing growth potential. **Chairs**, **Bookcases**, and **Storage** perform well in revenue but have **low profit margins**. **Supplier** and **Furnishings** are underperforming with both **low revenue** and **low margins**.
+
+**2. Revenue and Profit Margin by Sub-Category**
+- **Phones ($1.4M)**, **Chairs**, **Copiers**, and **Tables** lead in **revenue**. **Accessories (26%)**, **Labels (23%)**, and **Art (18%)** stand out for **profit margins**. **Tables (-7%)** are underperforming with negative profit margins.
+
+**3. Orders, Customers, and Return Rate by Sub-Category**
+- **Storage** leads in **orders (216)** but has low profit margins. **Labels (10%)**, **Fasteners (6%)**, and **Paper (5%)** show high **return rates**, raising potential quality concerns. Categories like **Art** and **Appliances** have **low return rates**, indicating high customer satisfaction.
+
+**4. Revenue Decomposition**
+- This revenue dashboard effectively breaks down sales by **segment** and **category** but suffers from **data repetition** and **inconsistent formatting** that reduces clarity
+
+**5. Top 10 Products by Profit**
+- **Canon imageCLASS 2200**, **Motorola Smart Phone**, and **Cisco Smart Full Size** top the profit list, mainly from **Technology**. → **Furniture** and **Office Supplies** products lag behind in profitability.
+
 ---
 ## 5. 🔎 Final Conclusion & Recommendations
 
-👉🏻 Based on the insights and findings above, we recommend the **Business Strategy Team** to consider:   
-
-📌 **Key Takeaways:**  
-✔️ **Strategic Market Expansion**  
-- **Focus**: EU (18% Profit Ratio, 3.5% Return) and US (15% Profit Ratio, 4.2% Return)  
-- **Action**: Allocate 60% of marketing budget to these high-potential markets.  
-
-✔️ **Product Portfolio Optimization**  
-- **Scale Up**: Phones & Chairs (High Profit, Low Return) → Design bundled offers.  
-- **Phase Out**: Tables (4% Profit, >12% Return) → Test redesign before discontinuation.  
-
-✔️ **Risk-Managed Growth**  
-- **Stabilize**: APAC (12.16% Profit) and Canada (26.62% Profit) → Maintain current operations.  
-- **Experiment**: LATAM/Africa (High Return Rates) → Pilot localized promotions to reduce returns.
-  
-### 🎯 Strategic Framework:  
-| **Strategy**  | **Markets**       | **Products**          | **Budget Allocation** |  
-|---------------|-------------------|-----------------------|-----------------------|  
-| **Expand**    | EU, US            | Phones, Chairs        | 60%                   |  
-| **Stabilize** | APAC, Canada      | Office Supplies       | 30%                   |  
-| **Test**      | LATAM, Africa     | Tables (Redesign)     | 10%                   |  
-
-> 💡 **Next Steps**: Monitor Return Rate trends quarterly and adjust product mix accordingly.  
-
+| **Strategy** | **Insight** | **Recommendation** |
+| ------------ | ----------- | ------------------ |
+| **🚀 1. Market Expansion Strategy** | - **Canada** has the highest **profit margin (28%)** despite low revenue. <br> - **Africa** and **EMEA** show exceptionally high **revenue growth** (+168% / +183%). <br> - **Oceania** & **Africa** have the highest number of **new customers**. | - **Expand selectively in Canada** to maximize profitability. <br> - **Increase investment in Africa and EMEA** to capture growth. <br> - **Focus promotions in Oceania & Africa** to drive new customer growth. |
+| **🛒 2. Product Portfolio Optimization** | - **Technology** leads in both **revenue** and **profit**. <br> - **Accessories**, **Art**, and **Labels** are high-margin but **low-revenue**. <br> - **Suppliers** and **Furnishings** underperform in both **revenue** and **profit**. <br> - **Tables** bring high **revenue** but incur **losses (-7%)**. <br> - **Storage** has high **orders** but **low profit margin**. | - **Scale Technology**, focusing on high-margin products like **Canon Copiers** and **Motorola/Cisco Phones**. <br> - **Market Accessories**, **Art**, and **Labels**, leveraging high margins. <br> - **Consider delisting Suppliers**, **Furnishings**, and **Tables** due to poor performance. <br> - **Review Storage pricing** and costs for better profitability. |
+| **👥 3. Customer Strategy**        | - **99.97%** of revenue comes from **existing customers**. <br> - **Oceania** & **Africa** have the largest **new customer base**.                                                      | - **Focus on customer retention** with loyalty and upselling initiatives. <br> - **Expand acquisition efforts in Oceania & Africa** to capture growth potential. |
+| **⚙️ 4. Operational Efficiency**   | - **US**, **EU**, and **APAC** show slower growth. <br> - **Central region** leads in **employee productivity** ($2.07M per employee). <br> - **Standard Class** dominates **shipping revenue**. | - **Optimize operations** in mature markets to maintain margins. <br> - **Replicate Central region's model** in other regions. <br> - **Focus on Standard Class shipping** and audit other modes for savings. |
