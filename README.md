@@ -1,3 +1,5 @@
+# Analyzing Superstore Sales Performance in Global Retail
+
 <img src="https://github.com/user-attachments/assets/e1583dd2-3b38-453a-b6ab-efd4136d4a42" width="100%" />
 
 **Author:** Nguyễn Phương Huy
