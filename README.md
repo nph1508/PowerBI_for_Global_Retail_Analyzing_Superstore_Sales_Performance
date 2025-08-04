@@ -116,8 +116,8 @@ The dataset consists of **three tables**:
 </details>
 
  📸 **Data Model Diagram**
- 
-<img width="585" alt="datamodeling2" src="https://github.com/user-attachments/assets/e872b470-44bd-405c-9b7a-a4fee57ec447" />
+
+<img width="989" height="659" alt="image" src="https://github.com/user-attachments/assets/10a10afc-b638-4a99-b727-bb3a6e02b77b" />
 
 ---
 
