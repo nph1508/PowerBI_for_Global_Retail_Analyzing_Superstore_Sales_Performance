@@ -1,4 +1,4 @@
-# Analyzing Superstore Sales Performance in Global Retail | Power BI
+<img width="4000" height="2250" alt="PowerBi_Project2-2" src="https://github.com/user-attachments/assets/878e6d2e-7448-43c2-ab86-b9c929e53548" /># Analyzing Superstore Sales Performance in Global Retail | Power BI
 
 <img src="https://github.com/user-attachments/assets/e1583dd2-3b38-453a-b6ab-efd4136d4a42" width="100%" />
 
@@ -131,10 +131,21 @@ The dataset consists of **three tables**:
 *A human-centered approach for actionable insights*  
 
 ### 1️⃣ Empathize
+<img width="4000" height="2250" alt="PowerBi_Project2-1" src="https://github.com/user-attachments/assets/a4942c0b-671f-4c0b-89bf-0eaf8d3c2d99" />
+
+<img width="4000" height="2250" alt="PowerBi_Project2-2" src="https://github.com/user-attachments/assets/ba101249-522a-473d-8144-8a8ba6ae201d" />
 
 ### 2️⃣ Define point of view 
 
+<img width="4000" height="2250" alt="PowerBi_Project2-3" src="https://github.com/user-attachments/assets/98aaaee0-1670-4d94-a8a7-8c508401cc67" />
+
+<img width="4000" height="2250" alt="PowerBi_Project2-4" src="https://github.com/user-attachments/assets/52c57f31-1451-4936-a648-c90544af0c58" />
+
 ### 3️⃣ Ideate
+
+<img width="4000" height="2250" alt="PowerBi_Project2-5" src="https://github.com/user-attachments/assets/81162885-0c40-4c6b-bdde-6bb578e58c99" />
+
+<img width="4000" height="2250" alt="PowerBi_Project2-6" src="https://github.com/user-attachments/assets/e74f8be6-584a-416c-9453-3c62faf2c38b" />
 
 ### 4️⃣ Prototype and review
 
