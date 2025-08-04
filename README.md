@@ -1,5 +1,3 @@
-<img width="4000" height="2250" alt="PowerBi_Project2-2" src="https://github.com/user-attachments/assets/878e6d2e-7448-43c2-ab86-b9c929e53548" /># Analyzing Superstore Sales Performance in Global Retail | Power BI
-
 <img src="https://github.com/user-attachments/assets/e1583dd2-3b38-453a-b6ab-efd4136d4a42" width="100%" />
 
 **Author:** Nguyễn Phương Huy
