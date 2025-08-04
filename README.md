@@ -119,88 +119,26 @@ The dataset consists of **three tables**:
 
 <img width="989" height="659" alt="image" src="https://github.com/user-attachments/assets/10a10afc-b638-4a99-b727-bb3a6e02b77b" />
 
+| **From Table** | **To Table** | **Join Key**   | **Relationship Type** |
+|------------|----------|------------|----------------------------------------------------|
+| `Orders`   | `People` | `Region`   | Many-to-One (multiple orders belong to one region) |
+| `Orders`   | `Returns`| `Order ID` | One-to-One or Left Join (not all orders are returned) |
+
 ---
 
 ## 3. 🧠 Design Thinking Process 
 
 *A human-centered approach for actionable insights*  
 
-### 1️⃣ Empathize - Understand Stakeholder Needs 
-**Primary User:** Senior Business & Strategy Manager
-**Core Problem::**  
- *"How to identify potential markets and strategic products to expand operations while maximizing profit?"*
+### 1️⃣ Empathize
 
-**Empathy Map:**  
-| Aspect | Insights |  
-|--------|----------|  
-| **Thinking** | "Profit quality matters more than revenue volume" |  
-| **Pains** | No unified view of profitability across dimensions (product/region/time) |  
-| **Gains** | Optimize resource allocation and investment decisions |
+### 2️⃣ Define point of view 
 
-**Dataset:**
-   - **Fact Tables:** fact_orders, fact_return
-   - **Dimension Tables:** dim_product, dim_date, dim_category, dim_subcategory, dim_peoplesale
+### 3️⃣ Ideate
 
-### 2️⃣ Define - Frame the Problem 
-**Northstar Metric:**  
-📊 **Profit Ratio** = Net Profit / Total Revenue
-   - Why?: Reflects financial efficiency of business decisions. 
+### 4️⃣ Prototype and review
 
-**Growth Formula Breakdown:**
-Profit Ratio = (SUM(Profit) / SUM(Revenue))  
-↓  
-Drill-down by: [Product] × [Market] × [Sales Channel]  
-
-
-### 3️⃣ Ideate - Dashboard Framework
-**Information Architecture:**  
-| Layer | Scope | Visualization Examples  |  
-|-------|-------|------------------------ |  
-| **Layer 0** | Executive Summary | Profit Ratio KPI, Revenue vs Profit Waterfall |  
-| **Layer 1** | Single-Dimension Analysi | Top/Nth Products by Profit (Bar Chart), Profit Heatmap |
-| **Layer 0** | Multi-Dimension Analysis | Market Detail |
-
-**Dashboard Structure:**
-1. **Overview Page:**
-   - Key Metrics: Profit Ratio (18.5%), YoY Growth
-   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
-2. **Product/Market Page:**
-   - Key Metrics: Profit Ratio (18.5%), YoY Growth
-   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
-3. **Detail Page:**
-   - Visuals: Geo Map (Profit by Region), Trend Line (Monthly Profit)
-   
-### 4️⃣ Prototype (Design Iterations)
-Key Features Implemented:
-- ✅ Dynamic Profit Matrix: Interactive cross-filtering (Product × Market)
-- ✅ Drill-Through: From overview to granular data
-- ✅ Alert System: Highlight products with profit margin < 10%
-
-### 5️⃣ Review & Iterate
-**Improvements Across Versions:**  
-| Version | Key Changes |
-|-------- |------------ |
-| V1      |	Added industry benchmarks to KPI cards |
-| V2      |	Simplified tooltip formatting (currency units) |
-| V3      |	Enabled PDF export per page |
-  
-> Iteration Insight: *"After testing, users requested a new comparison feature: Online vs. Offline sales profitability. Revisited Empathize stage to refine requirements."*
-
----
-
-## ⚒️ Main Process
-
-1️⃣ Data Cleaning & Preprocessing  
-2️⃣ Exploratory Data Analysis (EDA)  
-3️⃣ SQL/ Python Analysis 
-
-- In each step, show your Code
-
-- Include query/ code execution screenshots or result samples
-
-- Explain its purpose and its findings
-
-4️⃣ Power BI Visualization  (applicable for PBI Projects)
+This part is in the dashboard
 
 ---
 
@@ -209,16 +147,25 @@ Key Features Implemented:
 #### 1️⃣ Page 1: Overview Dashboard Preview 
 ![Analyzing Superstore Sales Performance in Global Retail_page-0001](https://github.com/user-attachments/assets/2354a59d-e233-4d31-83c4-9f546cf0b765)
 
+### 📌 Key Findings:
 
-📌 **Analysis 1:**  
-- **Observation:**  
-  - **Profit Ratio:** 11.61% overall, with Canada leading (26.62%) 
-  - **Return Rate:** 4.68% globally, highest in EU (6.18%) 
-  - **Sales Trend:** Steady growth from 2011-2014, with seasonal dips in mid-year 
+**1. Revenue & Profit Surged**  
+   - Revenue reached **$9.48M** and profit hit **$1.1M**, both increasing **51.3% YoY**. → **Growth** was primarily driven by **increased order volume**, **not by improved operational efficiency** (profit margin remained at **12%**).
 
-- **Recommendation:**  
-  - Prioritize **Canada market** for high-profit campaigns. 
-  - Investigate **EU return rates** for product quality issues.    
+**2. Customer Base Expands Steadily**  
+   - Customer count grew from **1303 (2011)** to **1501 (2014)**, with a stable **~1% return rate**. → Indicates **strong customer retention** and consistent service quality over time.
+
+**3. Canada Shows Highest Profit Margin**  
+   - **Canada** achieved a **28% profit margin** despite low revenue. **US, EU, and APAC** contributed the highest revenue overall. → Suggests **Canada** has high **profitability potential**, while the **US remains the core market** in terms of scale.
+
+**4. Consumer Segment Leads**  
+   - The **Consumer segment** generated **$4.9M**, the highest among all segments, with a stable **11–12% margin**. → Indicates **steady demand** and a key role in **driving overall growth**.
+
+**5. Technology Drives Growth**  
+   - **Technology products** generated the highest revenue across all regions. → Suggests **customers have a strong preference** for **tech products** over other categories.
+
+**6. Growth Driven by Existing Customers**  
+   - **Buyer count** increased only **1%**, but **orders surged 51.7%**; **Average Order Value (AOV)** slightly decreased by **-0.3%**. → Indicates **strong repeat purchase behavior**, with smaller but more frequent orders.
 
 #### 2️⃣ Page 2: Market Analysis Dashboard Preview 
 ![Analyzing Superstore Sales Performance in Global Retail_page-0002](https://github.com/user-attachments/assets/1ed79463-606d-4ef2-baeb-f8c061c61dd3)
